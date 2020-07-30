@@ -1,0 +1,44 @@
+.dropdown {
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dropdown-menu {
+    visibility: hidden;
+    position: absolute;
+    box-shadow: 5px 5px 10px gray;
+    padding: 5px;
+    z-index: 1;
+    background: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+
+.dropdown-item {
+    padding: 5px;
+    border-bottom: 1px solid #80808038;
+}
+
+.active {
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+
+.backdrop {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.dropdown-value {
+    background: rgba(0,0,0, 0.02);
+    width: fit-content;
+    padding: 5px 4px;
+    font-size: 24px;
+}
